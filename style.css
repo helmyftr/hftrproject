@@ -1,0 +1,457 @@
+/* link google font */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+/* start-style root */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+/* end-style root*/
+
+body {
+    background-image: url('scattered-forcefields.svg');
+}
+
+/* start-style header and navbar */
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 0 40px;
+   background-color: white;
+}
+header .company {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+}
+header .company .company-logo {
+    width: 50px;
+    height: 50px;
+}
+header .company .company-name {
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 22px;
+    color: #D82148;
+}
+header nav {
+    width: 40vw;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav li {
+    list-style-type: none;
+}
+header nav li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+    transition: 0.2s;
+}
+header nav li a:hover {
+    box-shadow: 0 5px 0 0 #D82148;
+}
+/* end-style header and navbar */
+
+main {
+    margin-top: 100px;
+}
+
+/* start-style email form */
+.main-content-container .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+}
+.main-content-container .form-container #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content-container .form-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.main-content-container .form-container #form .form-control {
+    margin: 10px 0 15px 0;
+    width: 270px;
+    border: 5px dashed #151D3B;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    padding: 7px;
+    text-align: center;
+    transition: 0.5s;
+}
+.main-content-container .form-container #form .form-control:focus {
+    border: 5px solid #D82148;
+}
+.main-content-container .form-container #form .form-control::placeholder {
+    color: #D82148;
+}
+.main-content-container .form-container #form .submit-btn {
+    border: none;
+    border-radius: 10px;
+    background: #151D3B;
+    outline: none;
+    box-shadow: 0 5px 0 0 #D82148;
+    color: white;
+    padding: 7px 7px 7px 35px;
+    width: 200px;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.main-content-container .form-container #form .submit-btn:hover {
+    box-shadow: 0 10px 0 0 #D82148;
+}
+.form-container .submit-container i {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 28px;
+}
+/* end-style email form */
+
+/* start-style feature content */
+.main-content-container .feature-container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+.main-content-container .feature-container .feature-header {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content-container .feature-container .feature-header h2 {
+    font-size: 40px;
+}
+.main-content-container .feature-container .feature {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.feature-1, .feature-2, .feature-3 {
+    display: flex;
+    margin-bottom: 30px;
+}
+.feature-1 i, .feature-2 i, .feature-3 i {
+    flex-basis: 20%;
+    color: #D82148;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-1 .feature-description, .feature-2 .feature-description, .feature-3 .feature-description {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.feature-description h3 {
+    font-size: 25px;
+    color: #151D3B;
+}
+.feature-description p {
+    font-size: 16px;
+}
+/* end-style feature content */
+
+/* start style video content */
+.main-content-container .video-container {
+    display: flex;
+    justify-content: center;
+}
+.main-content-container .video-container iframe {
+    border: 20px solid #D82148;
+    border-radius: 10px;
+    width: 720px;
+    height: 320px;
+    transition: 0.2s;
+}
+.main-content-container .video-container iframe:hover {
+    transform: scale(1.05);
+}
+/* end-style video content*/
+
+/* start-style class content */
+.card-content-container {
+    width: 95vw;
+    margin: 100px auto;
+}
+.card-content-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container .card {
+    flex-basis: 30%;
+    height: 400px;
+    background-color: #151D3B;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+.card-container .card:hover {
+    box-shadow: 0 0 0 4px white, 8px 8px 0 0 #D82148, -8px -8px 0 0 #6EBF8B;
+}
+.card .harga {
+    height: 30%;
+    border-radius: 10px;
+    background: whitesmoke;
+    box-shadow: inset 0 0 20px silver, inset 0 0 30px lightgray;
+    color: #D82148;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .description {
+    height: 55%;
+    padding-top: 10px;
+    color: white;
+}
+.description .title {
+    height: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+.description .desc {
+    height: 80%;
+    font-size: 16px;
+    overflow: auto;
+    opacity: 0.8;
+}
+.card .btn {
+    height: 15%;
+    padding-top: 10px;
+}
+.btn button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: #D82148;
+    font-size: 14px;
+}
+/* end-style card-class */
+
+/* style-footer */
+footer {
+    background-color: transparent;
+    color: #D82148;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* tab or ipad */
+/* media query for responsive */
+@media screen and (max-width: 900px) {
+    .card-content-container {
+        width: 100vw;
+    }
+    .card-container {
+        justify-content: space-evenly;
+    }
+    .card-container .card {
+        flex-basis: 31.5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    /* start - style header*/
+    header {
+        padding: 0 20px;
+    }
+    header .company, header nav {
+        width: 50vw;
+    }
+    /* end - style header */
+
+    /* start - style form container */
+    .main-content-container .form-container h2 {
+        font-size: 30px;
+    }
+    .main-content-container .form-container #form .form-control {
+        width: 235px;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .main-content-container .form-container #form .form-control::placeholder {
+        font-size: 14px;
+    }
+    .main-content-container .form-container #form .submit-btn {
+        width: 180px;
+        font-size: 14px;
+        padding: 6px 6px 6px 33px;
+    }
+    .form-container .submit-container i {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 26px;
+    }
+    /* end style form container*/
+
+    /* start style feature*/
+    .main-content-container .feature-container {
+        width: 95vw;
+        justify-content: space-around;
+    }
+    .main-content-container .feature-container .feature-header h2 {
+        font-size: 30px;
+    }
+    .feature-1 i, .feature-2 i, .feature-3 i {
+        font-size: 45px;
+    }
+    .feature-description h3 {
+        font-size: 20px;
+    }
+    .feature-description p {
+        font-size: 14px;
+    }
+    /* end style feature */
+
+    /* start style video */
+    .main-content-container .video-container iframe {
+        width: 520px;
+    }
+    .main-content-container .video-container iframe:hover {
+        transform: none;
+    }
+    /* end style video */
+
+    /* start style class */
+    .card-content-container h2 {
+        font-size: 30px;
+    }
+    .card-container .card {
+        height: 350px;
+        flex-basis: 30%;
+    }
+    .card .harga {
+        font-size: 25px;
+    }
+    .description .title {
+        font-size: 16px;
+    }
+    .description .desc {
+        font-size: 14px;
+    }
+    .btn button {
+        font-size: 12px;
+    }
+    /* end style class */
+}
+@media screen and (max-width: 700px) {
+    .card-container {
+        flex-direction: column;
+        margin-top: 0;
+        height: 1250px;
+    }
+    .card-container .card {
+        width: 70vw;
+        margin: auto;
+    }
+    .card .harga {
+        font-size: 30px;
+    }
+    .description .title {
+        font-size: 20px;
+    }
+    .description .desc {
+        font-size: 16px;
+    }
+    .btn button {
+        font-size: 14px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    /* header and navigation */
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: 0 1px 30px 0 #a7a7a7;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
+    header .company, header nav {
+        width: 100%;
+        justify-content: center;
+    }
+    header .company {
+        margin-bottom: 10px;
+    }
+    header nav li a {
+        font-size: 14px;
+    }
+    /* main content */
+    main {
+        margin-top: 150px;
+    }
+    /* email form */
+    .main-content-container .form-container {
+        width: 95vw;
+        text-align: center;
+    }
+    .main-content-container .form-container h2 {
+        font-size: 35px;
+    }
+    .main-content-container .form-container #form .form-control {
+        width: 270px;
+        font-size: 14px;
+    }
+    /* feature content */
+    .main-content-container .feature-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-content-container .feature-container .feature-header h2 {
+        font-size: 35px;
+    }
+    .main-content-container .feature-container .feature {
+        margin-top: 50px;
+    }
+    .feature-1, .feature-2, .feature-3 {
+        flex-direction: column;
+    }
+    .feature-1 .feature-description, .feature-2 .feature-description, .feature-3 .feature-description {
+        width: 70vw;
+        margin: 5px auto;
+    }
+    /* video content */
+    .main-content-container .video-container iframe {
+        width: 80vw;
+        height: 240px;
+        border: 10px solid #D82148;
+    }
+}
